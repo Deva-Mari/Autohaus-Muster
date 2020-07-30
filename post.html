@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fas fa-ellipsis-v"></i> Autohaus</span> Muster
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Services</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+    <main>
+        <section class="post">
+            <h2>Blog Post One</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>Eric Muster</strong> | July 2020
+            </p>
+            <img src="./Images/Car Inside 5.jpg" alt="Ready for adventure">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat eos id labore doloribus, dolorem minus corporis ab sequi ex dolor explicabo minima facere eaque nemo accusantium quisquam numquam laborum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis numquam sint tenetur aliquam, recusandae illo nisi et cumque harum neque animi consequuntur repellat optio mollitia odit. Numquam, vitae saepe. Ducimus nihil nulla autem, architecto a maxime quis sequi suscipit sunt fugit repudiandae odio ratione laboriosam, quidem cum est maiores exercitationem consequatur obcaecati! Illo, distinctio? Illo officiis quo ipsum facere!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione beatae fugiat, iure quibusdam debitis ea dolore nostrum molestias architecto sit doloribus soluta id odit aliquam, voluptatem consectetur, numquam hic?</p>
+        </section>
+    </main>
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 Autohaus Muster</p>
+    </footer>
+    
+    <script>
+        const navbar = document.getElementById("navbar");
+        window.onscroll = function(){
+            if(window.pageYOffset > 100){
+                navbar.classList.remove("top");
+            }else{
+                navbar.classList.add("top");
+            }
+        }
+    </script>
+</body>
+</html>
